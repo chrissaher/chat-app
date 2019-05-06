@@ -1,1 +1,563 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+ <!-- START Head -->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    <title>
+         SPIN | Chat
+    </title>
+
+    <!--START Loader -->
+    <style>
+        #initial-loader{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;width:100%;background:#212121;position:fixed;z-index:10000;top:0;left:0;bottom:0;right:0;transition:opacity .2s ease-out}#initial-loader .initial-loader-top{display:flex;align-items:center;justify-content:space-between;width:200px;border-bottom:1px solid #2d2d2d;padding-bottom:5px}#initial-loader .initial-loader-top > *{display:block;flex-shrink:0;flex-grow:0}#initial-loader .initial-loader-bottom{padding-top:10px;color:#5C5C5C;font-family:-apple-system,"Helvetica Neue",Helvetica,"Segoe UI",Arial,sans-serif;font-size:12px}@keyframes spin{100%{transform:rotate(360deg)}}#initial-loader .loader g{transform-origin:50% 50%;animation:spin .5s linear infinite}body.loading {overflow: hidden !important} body.loaded #initial-loader{opacity:0}
+    </style>
+    <!--END Loader-->
+
+    <!-- SCSS Output -->
+    <link rel="stylesheet" href="public/stylesheets/app.min.e0bb64e7.css">
+
+    <!-- START Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="public/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="public/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="public/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="public/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="public/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="public/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="public/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="public/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="public/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="public/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- END Favicon -->
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../atom.xml">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83862026-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- jekyll settings -->
+    <script>
+        var ASSET_PATH_BASE = '../';
+    </script>
+</head>
+<!-- END Head -->
+
+
+<body class="loading">
+    <div id="initial-loader">
+    <div>
+        <div class="initial-loader-top">
+            <img class="initial-loader-logo" src="public/images/spin-logo-inverted.png" alt="Loader">
+            <div class="loader loader--style1">
+                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewbox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                    <g>
+                        <path fill="#2d2d2d" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
+                        <path fill="#2c97de" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z">
+
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="initial-loader-bottom">
+            Loading. Please Wait. <i class="fa fa-cricle" style="opacity: 0"></i>
+        </div>
+    </div>
+</div>
+
+    <!-- Bower Libraries Scripts -->
+    <script src="public/vendor/js/lib.min.js"></script>
+
+    <div class="main-wrap">
+        <nav class="navigation">
+            <!-- START Navbar -->
+<div class="navbar-inverse navbar navbar-fixed-top">
+       <div class="container-fluid">
+
+           <div class="navbar-header">
+            <a class="current navbar-brand" href="../index.html">
+                <img alt="Spin Logo Inverted" class="h-20" src="public/images/spin-logo-inverted-@2X.png">
+            </a>
+            <button class="action-right-sidebar-toggle navbar-toggle collapsed" data-target="#navdbar" data-toggle="collapse" type="button">
+                <i class="fa fa-fw fa-align-right text-white"></i>
+            </button>
+            <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                <i class="fa fa-fw fa-user text-white"></i>
+            </button>
+            <button class="action-sidebar-open navbar-toggle collapsed" type="button">
+                <i class="fa fa-fw fa-bars text-white"></i>
+            </button>
+          </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+
+
+            <!-- START Left Side Navbar -->
+            <ul class="nav navbar-nav navbar-left clearfix yamm">
+
+                <!-- START Switch Sidebar ON/OFF -->
+                <li id="sidebar-switch" class="hidden-xs">
+                    <a class="action-toggle-sidebar-slim" data-placement="bottom" data-toggle="tooltip" href="#" title="Slim sidebar on/off">
+                        <i class="fa fa-lg fa-bars fa-fw"></i>
+                    </a>
+                </li>
+                <!-- END Switch Sidebar ON/OFF -->
+
+            </ul>
+            <!-- START Left Side Navbar -->
+
+            <!-- START Right Side Navbar -->
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                        <i class="fa fa-lg fa-fw fa-envelope hidden-xs"></i>
+                            <span class="hidden-sm hidden-md hidden-lg">Messages <span class="badge badge-info m-l-1">1</span></span>
+                        <span class="label label-info label-pill label-with-icon hidden-xs">1</span>
+                        <span class="fa fa-fw fa-angle-down hidden-lg hidden-md hidden-sm"></span>
+                    </a>
+
+                    <!-- START Messages Dropdown Menu -->
+                    <ul class="dropdown-menu dropdown-menu-right p-t-0 b-t-0 p-b-0 b-b-0 b-a-0">
+                        <li>
+                            <div class="yamm-content p-t-0 p-r-0 p-l-0 p-b-0">
+                                <ul class="list-group m-b-0">
+                                    <li class="list-group-item b-r-0 b-l-0 b-r-0 b-t-r-0 b-t-l-0 b-b-2 w-350">
+                                        <small class="text-uppercase">
+                                            <strong>Messages</strong>
+                                        </small>
+                                        <a role="button" href="../apps/new-email.html" class="btn m-t-0 btn-xs btn-default pull-right">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </li>
+
+                                    <!-- START Scroll Inside Panel -->
+                                    <li class="list-group-item b-a-0 p-x-0 p-y-0 b-t-0">
+                                        <div class="scroll-200 custom-scrollbar">
+
+                                            <a href="../apps/email-details.html" class="list-group-item b-r-0 b-t-0 b-l-0">
+                                                <div class="media">
+                                                    <div class="media-left media-middle">
+                                                        <div class="avatar">
+                                                            <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/antjanus/128.jpg" alt="Avatar">
+                                                                <i class="avatar-status avatar-status-bottom bg-danger b-gray-darker"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body media-auto">
+                                                        <h5 class="m-b-0 m-t-0">
+                                                            <span>Christian</span>
+                                                            <small><span>04:17</span></small>
+                                                        </h5>
+                                                        <p class="m-t-0 m-b-0">
+                                                            <span>I miss you <i class="fa fa-fw fa-heart text-danger"></i></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </li>
+                                    <!-- END Scroll Inside Panel -->
+
+                                    <li class="list-group-item b-a-0 p-x-0 b-b-0 p-y-0 r-a-0">
+                                        <a class="list-group-item text-center b-b-0 b-r-0 b-l-0 b-r-b-r-0 b-r-b-l-0" href="../apps/inbox.html">
+                                            See All Messages <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- END Messages Dropdown Menu -->
+
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle user-dropdown" data-toggle="dropdown" href="#" role="button">
+                        <span class="m-r-1">Narciso Bartell</span>
+                        <div class="avatar avatar-image avatar-sm avatar-inline">
+                            <img alt="User" src="https://s3.amazonaws.com/uifaces/faces/twitter/sgaurav_baghel/128.jpg">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header text-gray-lighter">
+                            <strong class="text-uppercase">Account</strong>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="../apps/profile-details.html">Your Profile</a>
+                        </li>
+                        <li>
+                            <a href="../apps/profile-edit.html">Settings</a>
+                        </li>
+                        <li>
+                            <a href="../apps/faq.html">Faq</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="../pages/login.html">Sign Out</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hidden-xs">
+                    <a class="action-right-sidebar-toggle" title="Right sidebar on/off">
+                        <i class="fa fa-lg fa-align-right"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- END Right Side Navbar -->
+        </div>
+
+
+    </div>
+</div>
+<!-- END Navbar -->
+
+    <!-- START Sidebars -->
+<aside class="navbar-default sidebar">
+    <div class="sidebar-overlay-head">
+        <img src="public/images/spin-logo-inverted.png" alt="Logo" width="90">
+        <a href="#" class="sidebar-switch action-sidebar-close">
+            <i class="fa fa-times"></i>
+        </a>
+    </div>
+    <div class="sidebar-logo">
+        <img class="logo-default" src="public/images/spin-logo-big-inverse-@2X.png" alt="Logo" width="53">
+        <img class="logo-slim" src="public/images/spin-logo-slim.png" alt="Logo" height="13">
+    </div>
+
+    <div class="sidebar-content">
+      <div class="sidebar-default-visible text-muted small text-uppercase sidebar-section p-y-2">
+          <strong>Navigation</strong>
+      </div>
+
+      <!-- START Tree Sidebar Common -->
+      <ul class="side-menu">
+        <li class="active">
+            <a href="../apps/chat.html">
+                <i class="fa fa-comments fa-lg"></i><span class="nav-label">Chat</span>
+                <span class="pull-right label label-primary label-outline text-uppercase">New</span>
+            </a>
+        </li>
+      </ul>
+      <!-- END Tree Sidebar Common  -->
+    </div>
+</aside>
+<!-- END Sidebars -->
+
+
+
+        </nav>
+
+        <div class="content">
+            <!-- START Sub-Navbar with Header only-->
+<div class="sub-navbar sub-navbar__header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header m-t-0">
+                    <h3 class="m-t-0">Chat</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Sub-Navbar with Header only-->
+
+<!-- START Sub-Navbar with Header and Breadcrumbs-->
+<div class="sub-navbar sub-navbar__header-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 sub-navbar-column">
+                <div class="sub-navbar-header">
+                    <h3>Chat</h3>
+                </div>
+                <ol class="breadcrumb navbar-text navbar-right no-bg">
+                    <li class="current-parent">
+                        <a class="current-parent" href="../index.html">
+                            <i class="fa fa-fw fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="active">Chat</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Sub-Navbar with Header and Breadcrumbs-->
+
+
+<div class="container">
+    <!-- START EDIT CONTENT -->
+
+    <div class="row m-t-3">
+        <div class="col-lg-3">
+
+            <div class="hr-text hr-text-left m-t-3 m-b-1">
+                <h6><strong>Contacts</strong></h6>
+            </div>
+            <!-- START Widget - Menu Pills Vertical -->
+            <div class="scroll-300 custom-scrollbar">
+                <ul class="nav nav-pills nav-stacked">
+
+                    <!-- START User Online (Small) -->
+                    <li role="presentation" class="active">
+                        <a href="#">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="avatar avatar-image avatar-sm">
+                                        <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/haligaliharun/128.jpg" alt="Avatar">
+                                        <i class="avatar-status avatar-status-bottom bg-success b-brand-gray-darker"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="m-t-0 m-b-0"><span>Aric Gleason</span></h5>
+                                    <p class="small m-b-0"><span>Internal Intranet Analyst</span></p>
+                                </div>
+                                <div class="media-right">
+                                    <i class="fa fa-fw fa-circle text-primary" data-toggle="tooltip" data-placement="left" title="New Message"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- START User Online (Small) -->
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="col-lg-9">
+
+
+            <!-- START Panel Sessions -->
+            <div class="panel panel-default b-a-2 no-bg b-gray-dark">
+                <div class="panel-heading">
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h4 class="panel-title">Chat with <span>Madisen DuBuque</span></h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="scroll-600 custom-scrollbar">
+                    <div id="ChatForm" class="panel-body">
+
+                        <div class="hr-text hr-text-center m-t-2 m-b-1">
+                            <h6 class="text-white"><strong>Today</strong></h6>
+                        </div>
+
+                        <!-- START Right Chat -->
+                        <div id="RightChat">
+                          <div class="media">
+                              <div class="media-body">
+                                  <div class="panel-default">
+                                      <div class="panel-body bg-gray text-white b-r-a-3">
+                                          <span>#RightChat</span>
+                                      </div>
+                                  </div>
+                                  <h5 class="m-t-1 text-right"><small><span>Tue Nov 08 2016 23:01:49 GMT+0100 (&#x15A;rodkowoeuropejski czas stand.)</span></small> <span>Moises Graham</span></h5>
+                              </div>
+                              <div class="media-right">
+                                  <div class="avatar">
+                                      <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/greenbes/128.jpg" alt="Avatar">
+                                      <i class="avatar-status avatar-status-bottom bg-success b-brand-gray-darker"></i>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div id="LeftChat">
+                          <div class="media">
+                              <div class="media-left">
+                                  <div class="avatar">
+                                      <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/chris_witko/128.jpg" alt="Avatar">
+                                      <i class="avatar-status avatar-status-bottom bg-danger b-brand-gray-darker"></i>
+                                  </div>
+                              </div>
+                              <div class="media-body">
+                                  <div class="panel-default">
+                                      <div class="panel-body bg-primary text-white b-r-a-3">
+                                          <span>#LeftChat</span>
+                                      </div>
+                                  </div>
+                                  <h5 class="m-t-1"><span>Darryl Johns</span>   <small><span>at Tue Dec 06 2016 22:38:05 GMT+0100 (&#x15A;rodkowoeuropejski czas stand.)</span></small></h5>
+                              </div>
+                          </div>
+                        </div>
+                        <!-- END Right Chat -->
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <!-- START Send Message Input -->
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button"><i class="fa fa-fw fa-plus"></i></button>
+                       </span>
+
+                        <input id="txtMsg" type="text" class="form-control" placeholder="Your Message...">
+                        <span class="input-group-btn">
+                          <button id="sendMsg" class="btn btn-primary" type="button">Send</button>
+                        </span>
+                    </div>
+                    <!-- END Send Message Input -->
+                </div>
+
+            </div>
+            <!-- END Panel Sessions -->
+        </div>
+
+
+    </div>
+
+</div>
+
+        </div>
+
+ <div class="right-sidebar">
+    <!-- DodatkowyContent: data-target-extra-content wskazuje, że ten konkretny div ma być przykrywany przez kontener o id chatpanel2 -->
+    <div class="container-fluid" data-target-extra-content="chatpanel2">
+        <div class="row">
+
+            <!-- <a href="#" class="extra-content-open">Extra content Large</a>-->
+
+            <!-- START Tabs -->
+            <div class="tabbable-line">
+            <ul class="nav nav-tabs m-r-1 m-t-2">
+                <!-- Tab: Calendar -->
+                <li role="presentation" class="visible-xs">
+                    <a class="action-right-sidebar-toggle" href="javascript:void(0)" role="tab">
+                        <span class="fa fa-times"></span>
+                    </a>
+                </li>
+                <!-- Tab: Calendar -->
+                <li class="active" role="presentation">
+                    <a data-toggle="tab" href="#tab-calendar" role="tab"><span class="fa fa-calendar-o"></span></a>
+                </li>
+                <!-- Tab: Statisticts -->
+                <li role="presentation">
+                    <a data-toggle="tab" href="#tab-statistics" role="tab"><span class="fa fa-area-chart"></span></a>
+                </li>
+                <!-- Tab: Users -->
+                <li role="presentation">
+                    <a data-toggle="tab" href="#right-sidebar-users" role="tab"><span class="fa fa-users"></span></a>
+                </li>
+                <!-- Tab: Timeline -->
+                <li role="presentation">
+                    <a data-toggle="tab" href="#right-sidebar-timeline" role="tab"><span class="fa fa-list"></span></a>
+                </li>
+                 <!-- Tab: Settings -->
+                <li role="presentation">
+                    <a data-toggle="tab" href="#right-sidebar-settings" role="tab"><span class="fa fa-gear"></span></a>
+                </li>
+            </ul>
+            <!-- END Tabs -->
+
+            <!-- START Tab: Calendar -->
+            <div class="tab-content vertical-scroll-container" id="myTabContent">
+                <div class="tab-pane fade in active p-r-1" id="tab-calendar" role="tabpanel">
+
+                   <p class="small text-uppercase m-b-0 m-t-1"><strong>Weather</strong></p>
+
+                </div>
+                <!-- END Tab: Calendar -->
+
+                <!-- START Tab: Statistics -->
+                <div class="tab-pane fade p-r-1" id="tab-statistics" role="tabpanel">
+
+                     <p class="small text-uppercase m-b-0 m-t-1"><strong>Statisticts</strong></p>
+                </div>
+                    <!-- END Tab: Statisticts -->
+
+                    <!-- START Tab: Users -->
+                <div class="tab-pane fade p-r-1" id="right-sidebar-users" role="tabpanel">
+                    <p class="small text-uppercase m-b-2 m-t-1"><strong>Users with Chat</strong></p>
+                </div>
+                    <!-- END Tab: Users -->
+
+                <!-- START Tab: Settings -->
+                <div class="tab-pane fade p-r-1" id="right-sidebar-settings" role="tabpanel">
+
+                    <p class="text-uppercase small m-t-1 m-b-2"><strong>Settings</strong></p>
+
+                </div>
+                    <!-- END Tab: Settings -->
+
+                    <!-- START Tab: Timeline -->
+                <div class="tab-pane fade p-r-1" id="right-sidebar-timeline" role="tabpanel">
+
+                    <p class="text-uppercase small m-t-1 m-b-2"><strong>Timeline</strong></p>
+
+                </div>
+                        <!-- END Tab: Timeline -->
+            </div>
+                                    <!-- END Tabs All Content -->
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- START Footer -->
+<footer>
+    <div class="container-fluid">
+        <p class="text-gray-dark">
+            <strong class="m-r-1">Dashboard </strong>
+            <span class="text-gray-dark">&#xA9; 2019 - 2019. Made with
+            <i class="fa fa-fw fa-heart text-danger"></i> Tokyo, Japan</span>
+        </p>
+    </div>
+</footer>
+<!-- END Footer -->
+
+    </div>
+    <script>
+        // Hide loader
+        (function() {
+            var bodyElement = document.querySelector('body');
+            bodyElement.classList.add('loading');
+
+            document.addEventListener('readystatechange', function() {
+                if(document.readyState === 'complete') {
+                    var bodyElement = document.querySelector('body');
+                    var loaderElement = document.querySelector('#initial-loader');
+
+                    bodyElement.classList.add('loaded');
+                    setTimeout(function() {
+                        bodyElement.removeChild(loaderElement);
+                        bodyElement.classList.remove('loading', 'loaded');
+                    }, 200);
+                }
+            });
+        })();
+    </script>
+
+    <!-- Bower Libraries Styles -->
+    <link rel="stylesheet" href="public/vendor/css/lib.min.css">
+
+    <script src="public/javascript/app.min.13a3a368.js"></script>
+
+    <script src="public/javascript/plugins-init.js"></script>
+    <script src="public/javascript/switchery-settings.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="public/main/chat.js"></script>
+</body>
+
+</html>
